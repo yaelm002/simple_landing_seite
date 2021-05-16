@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <title>Nike</title>
+</head>
+<body>
+    <section class="section">
+      <div class="kreis"></div>
+      <header class="header">
+          <a href="" ><img src="img/logo.png" alt="" class="logo"></a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h2>Es sind nicht nur Schuhe <br>sondern <span class="span"> Erfahrung</span></h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure enim perferendis ullam tenetur aperiam, quidem nemo pariatur odio sunt ipsam, natus beatae minima provident. Ab unde ex quaerat deserunt ratione, sapiente, in doloribus quibusdam libero illo laboriosam quasi? Odit itaque non praesentium architecto. Eius magnam totam inventore saepe accusamus, nulla dolore labore? Aspernatur culpa, officiis explicabo eius non aliquid enim aliquam sit laudantium tempora tenetur minus alias fugit dolor doloribus est? Iure placeat quaerat doloremque tempore possimus neque cumque officiis!</p>
+          <a href="#" id="btn">noch mehr!</a>
+        </div>
+        <div class="image">
+          <img src="img/schuhe.png" alt="" class="schuhe">
+        </div>
+
+      </div>
+      <ul class="list">
+        <!--<li class="list-item item1"><img src="img/schuhe.png" onclick="slider('img/schuhe.png'); kreisFarbe('#DB4437')"></li>
+        <li class="list-item item2"><img src="img/schuhe2.png" onclick="slider('img/schuhe2.png');kreisFarbe('#9a9a9a')"></li>
+        <li class="list-item item3"><img src="img/schuhe3.png" onclick="slider('img/schuhe3.png'); kreisFarbe('#ccac00')"></li>
+        -->
+        <li class="list-item item1"><img src="img/schuhe.png" onclick="kreisFarbe('#DB4437')"></li>
+        <li class="list-item item2"><img src="img/schuhe2.png" onclick="kreisFarbe('#9a9a9a')"></li>
+        <li class="list-item item3"><img src="img/schuhe3.png" onclick="kreisFarbe('#ccac00')"></li>
+      </ul>
+      <ul class="sMedia">
+        <li class="sMedia-item"><a href=""><i class="fab fa-facebook"></i></a></li>
+        <li class="sMedia-item"><a href=""><i class="fab fa-twitter"></i></li>
+        <li class="sMedia-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </section>
+</body>
+<script src="app.js"></script>
+
+<script>
+  function slider(bild){
+    document.querySelector('.schuhe').src = bild;
+    console.log('yassine');
+  }
+  function kreisFarbe(farbe){
+    const kreis = document.querySelector('.kreis');
+    const span = document.querySelector('.span');
+    const btn = document.querySelector('#btn');
+    kreis.style.background = farbe;
+    span.style.color = farbe;
+    btn.style.background = farbe;
+  }
+</script>
+</html>

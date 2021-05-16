@@ -1,0 +1,145 @@
+
+.body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo{
+  position: relative;
+  max-width: 80px;
+  max-height: 80px;
+  margin-left: 20px;
+}
+
+.header ul{
+  position: relative;
+  display: flex;
+}
+
+.header ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.header ul li:nth-child(4){
+margin-right: 40px;
+}
+header ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black; 
+  font-size: 1.2rem;
+}
+
+.content{
+  margin: 40px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .text{
+  max-width: 600px;
+}
+.content .text h2{
+  font-size: 3rem;
+}
+.content .text h2 span{
+  color: #DB4437;
+}
+.content .image{
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.content .image img {
+  width: 400px;
+  height: 400px;
+}
+
+#btn{
+  display: inline-block;
+  background-color: #DB4437;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  transition: 0.3s ease-in;
+
+}
+
+#btn:hover{
+  background-color: white;
+  color: #DB4437;
+  border: #DB4437 solid 1px;
+}
+
+.list{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.list li{
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.list li:hover{
+ transform: translateY(-15px);
+}
+.list li img{
+  max-width: 80px;
+  max-height: 80px;
+  margin-left: 20px;
+}
+
+.sMedia{
+  position: absolute;
+  right: 20px;
+  top : 50%;
+}
+
+.sMedia li{
+  list-style: none;
+  margin-bottom: 40px;
+}
+.sMedia li .fab{
+  color: white;
+  font-size: 2rem;
+  transition: 0.3s ease-in;
+}
+
+.kreis{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#DB4437 ;
+  clip-path: circle(600px at right 800px);
+}
